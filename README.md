@@ -5,11 +5,11 @@ O usuário pode informar seu nome completo, e-mail, telefone e anexar seu currí
 
 # Ferramentas usadas
 
-Python
-Flask
+- Python
+- Flask
 
 # Melhorias futuras
 
-Adicionar mais campos ao formulário, como perguntas sobre experiência específica (por exemplo, experiência com Canvas).
+- Adicionar mais campos ao formulário, como perguntas sobre experiência específica (por exemplo, experiência com Canvas).
 
-Analisar os currículos recebidos e gerar dados estatísticos usando pandas e bibliotecas de gráficos.
+- Analisar os currículos recebidos e gerar dados estatísticos usando pandas e bibliotecas de gráficos.
