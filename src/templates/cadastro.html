@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='form-style.css')}}">
+</head>
+<body>
+
+  <!-- IMAGEM HEADER FINA NO TOPO -->
+  <div class="header-bar">
+    <img src="{{ url_for('static', filename='img/header.png') }}" alt="Imagem header" class="header-img">
+  </div>
+
+  <!-- FORMULÁRIO CORRETAMENTE ABERTO -->
+  <form action="{{ url_for('enviar') }}" method="POST" enctype="multipart/form-data">
+
+    <h1>Dê o primeiro passo para fazer parte do nosso time!</h1>
+    <p>Preencha seus dados e envie seu currículo.
+Estamos esperando por você!
+</p>
+
+    <div class="form-formulario">
+      <input type="text" name="nome" placeholder="Nome completo" required>
+      <input type="email" name="email" placeholder="E-mail" required>
+      <input type="text" name="telefone" placeholder="Telefone" required>
+    </div>
+
+    <div class="upload-area">
+      <label for="curriculo">Anexe seu currículo (PDF):</label>
+      <input type="file" id="curriculo" name="curriculo" accept=".pdf" required />
+      <button type="submit">Enviar Currículo</button>
+    </div>
+
+  </form>
+
+</body>
+</html>

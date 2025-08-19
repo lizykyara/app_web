@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #e0f5ec, #fafcfb, #f6faf7);
+  color: rgb(19, 16, 16);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-bar {
+  width: 100%;
+  height: 112px; /* ajuste conforme sua imagem */
+  overflow: visible;
+}
+.header-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.form-con h2 {
+    margin-top: 50px;
+    text-align: center;
+    color: #282929;
+    font-size: 40px;
+    margin-bottom: 60px;
+    font-weight: 600;
+}
+
+.form-van h2 {
+    margin-top: 30px;
+    text-align: center;
+    color: #282929;
+    font-size: 30px;
+    margin-bottom: 60px; 
+    font-weight: 600;
+
+}
+.form-caixa { 
+  width: 80%;                                /* largura total do container, 80% da tela */
+  max-width: 1000px;                         /* largura máxima de 1000px */
+  margin: 60px auto;                         /* centraliza horizontalmente e dá 60px de margem em cima e embaixo */
+  padding: 150px;                            /* espaço interno ao redor do conteúdo, deixa o box maior */
+  background: rgba(255, 255, 255, 0.11);    /* fundo branco com transparência */
+  border-radius: 12px;                       /* cantos arredondados */
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);     /* sombra suave ao redor */
+}
+
+.form-loja {
+  display: flex;                             /* organiza filhos em linha (horizontal) */
+  justify-content: column;                   /* NÃO existe 'column' no justify-content! Isso não funciona, na verdade é para flex-direction */
+  height: 40px;                             /* altura do seletor (barra) mais grossa */
+  gap: 60px;                                /* espaço entre os itens filhos (não funciona se só tem 1 filho) */
+  margin-bottom: 30px;                      /* espaço embaixo do container */
+  cursor: pointer;                          /* cursor muda para mãozinha ao passar */
+  align-items: auto;                        /* 'auto' não é um valor válido para align-items (normalmente: flex-start, center, etc.) */
+  width: 400px;                            /* largura fixa de 400px */
+  border: 2px solid #e0f5ec;               /* borda azul clara de 2px */
+}
+
+.form-loja select {
+  width: 100%;                             /* seletor ocupa toda a largura do container pai */
+  background-color: rgb(252, 253, 252);    /* cor de fundo quase branco */
+  font-size: 16px;                         /* tamanho da fonte */
+  font-family: "Trebuchet MS", sans-serif;/* fonte personalizada */
+  color: #333;                            /* cor da letra */
+}
+
+.form-cargo {
+  display: flex;                           /* organiza filhos em linha (horizontal) */
+  justify-content: column;                 /* MESMO problema de .form-loja: deveria ser flex-direction */
+  height: 40px;                           /* altura da barra */
+  gap: 60px;                             /* espaço entre filhos */
+  margin-bottom: 30px;                   /* espaço embaixo */
+  cursor: pointer;                       /* cursor em mãozinha */
+  align-items: auto;                     /* 'auto' inválido */
+  width: 400px;                         /* largura fixa */
+  border: 2px solid #e0f5ec;            /* borda azul clara */
+}
+
+.form-cargo select {
+  width: 100%;                          /* ocupa 100% da largura do container pai */
+  background-color: rgb(252, 253, 252); /* cor quase branca */
+  font-size: 16px;                      /* tamanho da fonte */
+  font-family: "Trebuchet MS", sans-serif; /* fonte */
+  color: #333;                         /* cor da letra */
+}
+
+.form-formulario {
+  width: 90%;           /* largura maior */
+  margin: 40px auto 20px; /* centralizado, com margem acima e abaixo */
+  padding: 40px 30px;   /* espaçamento interno maior */
+  box-sizing: border-box;
+  border: none;         /* tira a borda */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;            /* espaço entre os inputs */
+}
+
+.form-formulario input {
+  padding: 10px;                 /* Espaço interno das caixas de texto */
+  font-size: 16px;               /* Tamanho da fonte do texto dentro dos inputs */
+  border: 1px solid #ccc;        /* Borda cinza clara ao redor dos inputs */
+  border-radius: 6px;            /* Cantos arredondados das caixas de texto */
+}
+
+.upload-area {
+  width: 70%;                   /* Largura da área de upload (70% da largura do elemento pai) */
+  margin: 0 auto 50px;          /* Centraliza horizontalmente e adiciona margem inferior de 50px */
+  text-align: center;           /* Centraliza o texto dentro da área de upload */
+}
+
+.upload-area label {
+  font-size: 18px;              /* Tamanho da fonte do texto do label */
+  margin-right: 50px;           /* Espaço à direita do label para separar do input */
+}
+
+.upload-area input[type="file"] {
+  margin-right: 60px;           /* Espaço à direita do campo para upload de arquivo */
+}
+
+.upload-area button {
+  padding: 8px 15px;            /* Espaço interno do botão */
+  font-size: 14px;              /* Tamanho da fonte do texto no botão */
+  cursor: pointer;              /* Muda o cursor para indicar que o botão é clicável */
+}

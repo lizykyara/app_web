@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Início</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- IMAGEM HEADER FINA NO TOPO -->
+    <div class="header-bar">
+        <img src="{{ url_for('static', filename='img/header.png') }}" alt="Imagem header" class="header-img"> <!-- VERMELHO -->
+    </div>
+
+    <!-- SEÇÃO PRINCIPAL COM HERÓE E TEXTO LADO A LADO -->
+    <div class="hero-container"> <!-- VERMELHO: container flex -->
+        <div class="hero-left">
+            <img src="{{ url_for('static', filename='img/herosection.png') }}" alt="Imagem herosection" class="hero-img"> <!-- VERMELHO -->
+        </div>
+        <div class="hero-right">
+            <h1>Processo Seletivo</h1>
+            <p>Estamos em busca de pessoas criativas, organizadas e apaixonadas por transformar ideias em experiências visuais.</p>
+            <a href="{{ url_for('trabalhe_conosco') }}" class="btn">Trabalhe Conosco</a>
+        </div>
+    </div>
+
+</body>
+</html>
+

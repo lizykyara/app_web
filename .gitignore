@@ -1,0 +1,15 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Banco de dados
+instance/candidatos.db
+
+# Ambiente virtual
+venv/
+
+# Pastas de uploads
+uploads/
+
+# Arquivos do sistema
+*.DS_Store
